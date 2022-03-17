@@ -11,46 +11,46 @@ Search for "score". Eventually you'll find a line
 
 	path: "score-board"
 	
-Then, go to `http://192.168.0.18:3000/#/score-board`
+Then, go to `http://your.juice.shop.ip:port/#/score-board`
+
 
 ### Confidential Document
 
-Brute-force directories using your directory brute-force tool of choice. In my case, I used dirsearch
+Brute-force directories using your directory brute-force tool of choice. In my case, I used [dirsearch](https://github.com/maurosoria/dirsearch)
 
-`https://github.com/maurosoria/dirsearch`
+	python3 dirsearch.py -u "http://your.juice.shop.ip:port" -w /path/to/dictionary
+	...
+	Found "200 -   11KB - /ftp"
 
-	`python3 dirsearch.py -u "http://your.juice.shop.ip:port" -w /path/to/dictionary`
-	
-`Found "200 -   11KB - /ftp"`
+Then, go to `http://your.juice.shop.ip:port/#/ftp`
 
-Then, go to `http://192.168.0.18:3000/#/ftp`
-
-*Alternatively, you may also find the /ftp directory by going to http://192.168.0.18:3000/robots.txt*
+*Alternatively, you may also find the /ftp directory by going to `http://your.juice.shop.ip:port/robots.txt*`
 
 Several files can be found here. Server only allows to download .md and .pdf files.
 Open the file `acquisitions.md`
+
 
 ### Exposed metrics
 
 Happened to solve this one while trying to solve "Confidential Document (1*)"
 
-Brute-force directories using your directory brute-force tool of choice. In my case, I used dirsearch
-
-`https://github.com/maurosoria/dirsearch`
+Brute-force directories using your directory brute-force tool of choice.  
+In my case, I used I used [dirsearch](https://github.com/maurosoria/dirsearch)
 
 	python3 dirsearch.py -u "http://your.juice.shop.ip:port" -w /path/to/dictionary
-	
-`Found "200 - 22KB - /metrics"`
+	...
+	Found "200 - 22KB - /metrics"`
 
-Then, go to `http://192.168.0.18:3000/#/metrics`
+Then, go to `http://your.juice.shop.ip:port/#/metrics`
+
 
 ### Privacy Policy
 
-Log into your Juice Shop account. If you don't have one, make one.
-Go to the Account menu in the top bar. Select "Privacy & Security"
+Log into your Juice Shop account. If you don't have one, make one.  
+Go to the Account menu in the top bar. Select "Privacy & Security"  
 Select "Privacy Policy"
 
-Alternatively, go to `http://192.168.0.18:3000/#/privacy-security/privacy-policy`
+Alternatively, go to `http://your.juice.shop.ip:port/#/privacy-security/privacy-policy`
 
 ### Zero Stars
 
